@@ -1,0 +1,36 @@
+
+<app-header></app-header>
+        <div *ngIf="movie != null; else dontExists">
+            <div class="container">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="grid-container">
+                            <div class="slika">
+                                <img [src]="movie.poster" class="slika" alt="{{ movie.title }} poster">
+                            </div>
+                            <div class="movie-details">
+                                <h5 class="card-title">{{ movie.title }}</h5>
+                                <p class="card-text">{{ movie.summary }}</p>
+                                <p><strong>Directors:</strong> {{ movie.directors.join(', ') }}</p>
+                                <p><strong>Screenwriters:</strong> {{ movie.screenwriters.join(', ') }}</p>
+                                <p><strong>Producers:</strong> {{ movie.producers.join(', ') }}</p>
+                                <p><strong>Release Date:</strong> {{ movie.release_date }}</p>
+                                <p><strong>Running Time:</strong> {{ movie.running_time }}</p>
+                                <p><strong>Box Office:</strong> {{ movie.box_office }}</p>
+                                <p><strong>Rating:</strong> {{ movie.rating }}</p>
+                                <a [href]="movie.trailer" class="btn btn-primary" target="_blank">Watch Trailer</a>
+                                <a [href]="movie.wiki" class="btn btn-secondary ml-2" target="_blank">Wiki</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        <ng-template #dontExists>
+            <div class="card h-100">
+                <p class="alert alert-danger">Movie with this id do not exists!</p>
+            </div>
+        </ng-template>
+<app-footer></app-footer>

@@ -1,0 +1,15 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.slika {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.movie-details {
+    grid-row: 1;
+    grid-column: 6;
+    padding-top: 60px;
+}

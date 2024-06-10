@@ -1,0 +1,16 @@
+<ng-container *ngIf="character != undefined">
+    <div class="card h-100" style="width: 200px;">
+        <img [src]="character.image" class="card-img-top" alt="{{ character.name }} image">
+        <div class="card-body">
+          <h5 class="card-title">{{ character.name }}</h5>
+          <p class="card-text"><strong>Species:</strong> {{ character.species }}</p>
+          <p class="card-text"><strong>Gender:</strong> {{ character.gender }}</p>
+          <p class="card-text"><strong>House:</strong> {{ character.house }}</p>
+          <p class="card-text"><strong>Date of Birth:</strong> {{ character.dateOfBirth }}</p>
+          <p class="card-text"><strong>Actor:</strong> {{ character.actor }}</p>
+          <p class="card-text"><strong>Alive:</strong> {{ character.alive ? 'Yes' : 'No' }}</p>
+        </div>
+    </div>
+</ng-container>
+
+

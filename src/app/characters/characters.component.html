@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+<div class="my-3"></div>
+<app-pagination
+  [totalItems]="charLeng"
+  [itemsPerPage]="itemsPerPage"
+  [currentPage]="currentPagee"
+  (pageChanged)="onPageChanged($event)"
+></app-pagination>
+
+<div class="container my-5">
+    <div class="row">
+        <div *ngFor="let character of paginationCharacters" class="col-lg-2 col-md-4 mb-4">
+          <app-character-card [character]="character"></app-character-card>
+        </div>
+    </div>
+</div>
+
+
+<app-footer></app-footer>

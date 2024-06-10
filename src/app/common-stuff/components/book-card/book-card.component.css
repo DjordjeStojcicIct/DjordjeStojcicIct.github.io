@@ -1,0 +1,37 @@
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 1.25rem;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    margin-bottom: 1rem;
+  }
+  
+  .list-group-item {
+    border: none;
+    padding: 0.75rem 1.25rem;
+  }
+  
+  .btn-primary {
+    background-color: #0062cc;
+    border-color: #005cbf;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004a9c;
+  }
+  
+  .shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+  }

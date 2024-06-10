@@ -1,0 +1,67 @@
+<app-header></app-header>
+<div class="wrapper col3">
+    <div id="featured_slide">
+      <div id="featured_wrap">
+        <ul id="featured_tabs">
+          <li><a routerLink="../movies/1">Harry Potter and the Philosopher's Stone</a></li>
+          <li><a routerLink="../movies/2">Harry Potter and the Chamber of Secrets</a></li>
+          <li><a routerLink="../movies/3">Harry Potter and the Goblet of Fire
+          </a></li>
+          <li><a routerLink="../movies/4">Harry Potter and the Order of the Phoenix
+          </a></li>
+          <li><a routerLink="../movies/5">Harry Potter and the Half-Blood Prince
+          </a></li>
+          <li><a routerLink="../movies/6">Harry Potter and the Chamber of Secrets</a></li>
+          <li><a routerLink="../movies/7">Harry Potter and the Deathly Hallows
+          </a></li>
+        </ul>
+        <div id="featured_content">
+          <div class="featured_box" id="fc1"><img src="assets/images/demo/wp.jpeg" alt=""/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper col4">
+    <div id="container">
+      <div id="hpage">
+        <ul>
+          <li>
+            <ng-container *ngIf="harry != undefined">
+              <h2>{{harry.name}}</h2>
+              <div class="imgholder"><a routerLink="/characters"><img src="assets/images/demo/hp.jpeg" style="height:200px;width:200px;" alt="" /></a></div>
+              <p>Harry Potter, fictional character, a boy wizard created by British author J.K. Rowling. His coming-of-age exploits were the subject of seven enormously popular novels (1997–2007), which were adapted into eight films (2001–11); a play and a book of its script appeared in 2016.</p>
+              <p class="readmore"><a routerLink="/characters">Continue Reading &raquo;</a></p>
+            </ng-container>
+          </li>
+          <li>
+            <ng-container *ngIf="hermiony != undefined">
+              <h2>{{hermiony.name}}</h2>
+              <div class="imgholder"><a routerLink="/characters"><img src="assets/images/demo/hg.jpeg" style="height:200px;width:200px;"/></a></div>
+              <p>The character has had immense popularity. The version of Hermione portrayed by Emma Watson in all eight Harry Potter films from Philosopher's Stone in 2001 to Deathly Hallows – Part 2 in 2011 was voted the best female character of all time in a poll conducted amongst Hollywood professionals by The Hollywood Reporter in 2016.</p>
+              <p class="readmore"><a routerLink="/characters">Continue Reading &raquo;</a></p>
+            </ng-container>
+          </li>
+          <li>
+            <ng-container *ngIf="ron != undefined">
+              <h2>{{ron.name}}</h2>
+              <div class="imgholder"><a routerLink="/characters"><img src="assets/images/demo/rw.jpeg" style="height:200px;width:200px;"/></a></div>
+              <p>One of the protagonists in the novel, Ron Weasley is one of Harry's best friends, along with Hermione Granger. Ron is the youngest son in the Weasley family, and he has five older brothers. Ron feels that he is constantly outshone by their accomplishments, and his deepest desire is to achieve more than any of them.</p>
+              <p class="readmore"><a routerLink="/characters">Continue Reading &raquo;</a></p>
+            </ng-container>
+          </li>
+          <li class="last">
+            <ng-container *ngIf="draco != undefined">
+              <h2>{{draco.name}}</h2>
+              <div class="imgholder"><a routerLink="/characters"><img src="assets/images/demo/dm.jpeg" style="height:200px;width:200px;"/></a></div>
+              <p>Draco Lucius Malfoy is a fictional character and a major antagonist in J. K. Rowling's Harry Potter series. He is a student in Harry Potter's year belonging in the Slytherin house. He is frequently accompanied by his two cronies, Vincent Crabbe and Gregory Goyle, who act as henchmen.</p>
+              <p class="readmore"><a routerLink="/characters">Continue Reading &raquo;</a></p>
+            </ng-container>
+          </li>
+        </ul>
+        <br class="clear" />
+      </div>
+    </div>
+  </div>
+<app-footer></app-footer>
